@@ -1,0 +1,99 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "reasoning": "TripGenie is a travel planner that needs to feel inspiring, natural, and grounded, evoking real-world destinations rather than a clinical tech tool. Earthy, organic colors paired with high-end typography create a premium, calm, and trustworthy atmosphere for complex trip planning. Avoiding generic SaaS purple/blue in favor of terracotta and sage.",
+  "colors": {
+    "background": "#F9F8F6",
+    "surface": "#FFFFFF",
+    "surface_glass": "rgba(255, 255, 255, 0.75)",
+    "primary": "#E27D60",
+    "primary_hover": "#C86B50",
+    "secondary": "#85B09A",
+    "text_main": "#1A2F24",
+    "text_muted": "#5C6B62",
+    "border": "#E5E4E2",
+    "success": "#6B8E23",
+    "warning": "#E8A365",
+    "error": "#D9534F"
+  },
+  "typography": {
+    "headings": "Cabinet Grotesk, sans-serif",
+    "body": "Manrope, sans-serif",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-bold text-[#1A2F24]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-medium text-[#1A2F24]",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight text-[#1A2F24]",
+      "body": "text-base leading-relaxed text-[#5C6B62]",
+      "labels": "text-xs uppercase tracking-[0.2em] font-bold text-[#85B09A]"
+    }
+  },
+  "spacing_and_layout": {
+    "grid_system": "Bento Grid Protocol (Mode B for Dashboard, Mode A for Hero). Base grid 12-cols for flexible sizing.",
+    "container_padding": "Generous spacing. p-6 or p-8 inside cards, gap-6 or gap-8 between widgets.",
+    "border_radius": "rounded-2xl for primary cards, rounded-full for chips/buttons. No sharp edges.",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)] for static cards, hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] for interactive ones."
+  },
+  "components": {
+    "buttons": "Shadcn Button heavily customized. Primary CTA: bg-[#E27D60] text-white rounded-full px-8 py-6. Hover: scale slightly, darker bg.",
+    "cards": "Solid background #FFFFFF with delicate 1px border (#E5E4E2). padding: p-6. Subtle shadow. For Hero/Map overlays, use Crystal Glass (backdrop-blur-xl bg-white/70 border-white/40).",
+    "inputs": "Shadcn Form/Input. bg-[#F9F8F6] border-none focus:ring-2 focus:ring-[#85B09A].",
+    "chips": "Travel style chips: rounded-full px-4 py-2 text-sm font-medium border border-[#E5E4E2] bg-white hover:border-[#85B09A] hover:bg-[#F0F5F2] text-[#5C6B62] transition-colors.",
+    "timeline": "Day-wise itinerary: Left border in #85B09A. Items have relative positioning, small circular node on the border. Card structure on the right.",
+    "loading_screen": "Multi-agent progress. Staggered fade-ins. Agent status items: text-[#5C6B62] shifting to #1A2F24 when complete. Small pulsing indicator in #E27D60."
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_states": "hover:-translate-y-1 hover:shadow-lg for cards, group-hover:opacity-80 for images.",
+    "loading": "framer-motion staggered entrance. Custom SVG pulsing for agent status."
+  },
+  "icons_library": "@phosphor-icons/react",
+  "media": {
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1604715686140-d5bef96c8b9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRzY2FwZSUyMG5hdHVyZXxlbnwwfHx8fDE3Nzk3MjQ1NzN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Green grass field near lake under white sky",
+        "category": "hero_landing"
+      },
+      {
+        "url": "https://images.pexels.com/photos/10159724/pexels-photo-10159724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Stunning aerial view of a turquoise river winding through a deep, rugged valley",
+        "category": "hero_dashboard_header"
+      }
+    ],
+    "hotel_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1777170191230-3f357b815483?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBob3RlbCUyMHJvb20lMjByZXNvcnR8ZW58MHx8fHwxNzc5NzI0NTczfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Luxurious hotel bed",
+        "category": "hotel_card_premium"
+      },
+      {
+        "url": "https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Peaceful bedroom in tropical villa",
+        "category": "hotel_card_mid"
+      }
+    ],
+    "restaurant_images": [
+      {
+        "url": "https://images.pexels.com/photos/7627408/pexels-photo-7627408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Appetizing dishes served on white plates",
+        "category": "restaurant_card"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1663530761401-15eefb544889?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxyZXN0YXVyYW50JTIwZm9vZCUyMHBsYXRpbmclMjBkaW5uZXJ8ZW58MHx8fHwxNzc5NzI0NTczfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Chef pouring sauce over plated steak",
+        "category": "restaurant_card_premium"
+      }
+    ]
+  },
+  "testing_attributes": "All interactive elements, buttons, inputs, tabs, and critical text outputs (budget total, hotel name) MUST have data-testid attributes in kebab-case format reflecting their role (e.g., data-testid='plan-trip-submit-button', data-testid='budget-total-text').",
+  "instructions_to_main_agent": [
+    "Install required dependencies: yarn add @phosphor-icons/react framer-motion recharts date-fns.",
+    "Set up Tailwind config with provided colors, box shadows, and fonts. Add CSS imports for Cabinet Grotesk (e.g. from Fontshare API) and Manrope (Google Fonts) in index.css.",
+    "Implement the Trip Input Form using Shadcn primitives heavily styled to remove the default SaaS look. Use Calendar, Popover for multi-select, and ToggleGroup (or customized chips) for travel style.",
+    "Build the Loading State: A full-page overlay with an organic layout (not generic spinner). List the AI agents (Research, Weather, etc.) and use staggered animations to show them 'waking up' and completing tasks.",
+    "Design the Dashboard Overview using Bento Grid Layout: Top-left for Trip Summary, Top-right for Budget Summary (Recharts radial or donut), Middle for Weather Cards (horizontal scroll), and Bottom for Saved Trips.",
+    "Design the Itinerary Timeline: Use a vertical border path on the left. Each timeline item is a card. Mix transport icons, hotel images, and text seamlessly within these cards.",
+    "Ensure generous padding (p-6, p-8) across widgets to let the content breathe. Emphasize progressive disclosure.",
+    "CRITICAL: Do NOT use 'Inter' font. Do NOT use purple or teal gradients. Strictly adhere to the Earthy (Terracotta/Sage/Sand) color palette."
+  ]
+}

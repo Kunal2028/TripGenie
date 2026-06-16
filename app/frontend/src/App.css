@@ -1,0 +1,25 @@
+/* TripGenie - additional styles loaded after Tailwind */
+.App {
+    min-height: 100vh;
+    background-color: #f9f8f6;
+}
+
+.timeline-rail {
+    position: absolute;
+    left: 1.25rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #85b09a, rgba(133, 176, 154, 0.15));
+}
+
+.timeline-node {
+    position: absolute;
+    left: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background: #e27d60;
+    border: 3px solid #f9f8f6;
+    box-shadow: 0 0 0 2px #85b09a;
+}
