@@ -105,7 +105,7 @@ async def _invoke_langchain(llm, system: str, user: str, provider: str) -> str:
             raise RuntimeError(f"{provider} LangChain error: {exc}") from exc
     raise RuntimeError(f"{provider} rate limited or unavailable after retries")
 
-
+//Currently We are Not using this function
 async def _openai_compatible_chat(
     url: str,
     api_key: str,
