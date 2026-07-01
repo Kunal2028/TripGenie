@@ -1,4 +1,4 @@
-"""TripGenie multi-agent orchestration using Emergent LLM (Claude Sonnet)."""
+"""TripGenie multi-agent orchestration."""
 from __future__ import annotations
 import json
 import re
