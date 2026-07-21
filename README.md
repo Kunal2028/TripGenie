@@ -239,8 +239,7 @@ TripGenie/
 ## 👨‍💻 Author
 
 **Kunal Upadhyay**
-
-GitHub: https://github.com/Kunal2028
+**Sanjay Singh**
 
 ---
 
