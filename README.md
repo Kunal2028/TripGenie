@@ -238,7 +238,7 @@ TripGenie/
 
 ## 👨‍💻 Author
 
-**Kunal Upadhyay**
+**Kunal Upadhyay , **
 **Sanjay Singh**
 
 ---
